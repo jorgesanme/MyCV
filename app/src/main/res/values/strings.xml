@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">MyCV</string>
+    <string name="bottom_menu_title_employment">Employment</string>
+    <string name="bottom_menu_title_degree">Degree</string>
+    <string name="bottom_menu_title_course">Course</string>
+    <string name="bottom_menu_title_profile">Profile</string>
+    <string name="add_employment_item">Add a Employment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello DEGREE fragment</string>
+    <string name="add_employment_hint_position">Work Position</string>
+    <string name="add_employment_helper_position">Name of your position</string>
+    <string name="required">Required</string>
+    <string name="add_employment_hint_company">Company Name</string>
+    <string name="add_employment_hint_company_address">Company Address</string>
+    <string name="add_employment_hint_time_on_job">Time on Job (Year or Mouth)</string>
+    <string name="add_employment_hint_job_description">Job Description</string>
+    <string name="add_employment_hint_company_web">Company Website</string>
+    <string name="add_employment_title">Add Employment</string>
+    <string name="list_employment_title">Employment list</string>
+    <string name="menu_save">save</string>
 </resources>

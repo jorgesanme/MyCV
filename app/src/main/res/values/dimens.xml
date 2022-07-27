@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="cardview_size_200">200dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+</resources>

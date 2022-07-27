@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardview_size_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="@dimen/size_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgEmployment"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_marginStart="@dimen/size_8"
+            android:background="@color/cardView_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/job_description"/>
+
+        <TextView
+            android:id="@+id/work_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_8"
+            app:layout_constraintStart_toEndOf="@id/imgEmployment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgEmployment"
+            tools:text="Position at work"/>
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            app:layout_constraintStart_toStartOf="@id/work_position"
+            app:layout_constraintEnd_toEndOf="@id/work_position"
+            app:layout_constraintTop_toBottomOf="@id/work_position"
+            app:layout_constraintBottom_toTopOf="@id/time_on_job"
+            tools:text="company name"/>
+
+        <TextView
+            android:id="@+id/time_on_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            app:layout_constraintStart_toStartOf="@id/company_name"
+            app:layout_constraintEnd_toEndOf="@id/company_name"
+            app:layout_constraintTop_toBottomOf="@id/company_name"
+            app:layout_constraintBottom_toTopOf="@id/job_description"
+            tools:text="time on job"/>
+
+        <TextView
+            android:id="@+id/job_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_8"
+            android:minLines="4"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgEmployment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="description"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
